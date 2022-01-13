@@ -18,8 +18,10 @@ const ExpenseItem = (props) => {
             <div className="expense-item__price">${props.amount}</div>
           </div>
         </Card>
+        <div className="expense-item__remove" onClick={deleteHandler}>
+          Remove
+        </div>
       </li>
-      <div onClick={deleteHandler}>click me</div>
     </>
   );
 };
